@@ -310,12 +310,40 @@ section{padding:82px 0}
   font-weight:800;
 }
 
-.brands{background:var(--light)}
-.brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.brand-box{background:#fff;border:1px solid var(--border);border-radius:15px;padding:23px 15px;text-align:center;font-weight:900;min-height:85px;display:flex;align-items:center;justify-content:center}
-.dealer{margin-top:22px;background:var(--dark);color:#fff;border-radius:var(--radius);padding:27px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-.dealer strong{font-size:20px}.dealer small{display:block;color:#c9ced2;margin-top:4px}
+.brands{
+  background:
+    linear-gradient(180deg,#f7f8f9 0%,#eef0f2 100%);
+}
 
+.brand-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.brand-box{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:17px;
+  padding:25px 15px;
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-weight:900;
+  box-shadow:0 5px 16px rgba(0,0,0,.045);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.brand-box:hover{
+  transform:translateY(-4px);
+  border-color:#d1d5d8;
+  box-shadow:0 12px 26px rgba(0,0,0,.09);
+}
 .stats{
   background:
     radial-gradient(circle at 50% 0%,rgba(255,255,255,.06),transparent 42%),
