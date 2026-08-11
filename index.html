@@ -89,23 +89,131 @@ header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);backd
   box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.hero{background:linear-gradient(120deg,#f5f6f7,#fff 55%,#f8f8f8);padding:82px 0 75px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--border);border-radius:30px;padding:7px 13px;font-size:13px;font-weight:800;margin-bottom:20px;box-shadow:0 5px 18px rgba(0,0,0,.04)}
-.eyebrow-dot{width:8px;height:8px;background:var(--accent);border-radius:50%}
-.hero h1{font-size:clamp(40px,6vw,72px);line-height:1.04;letter-spacing:-2.5px;margin-bottom:22px}
-.hero h1 strong{color:var(--accent)}
-.hero-lead{font-size:19px;color:var(--muted);max-width:680px;margin-bottom:27px}
-.hero-buttons{display:flex;flex-wrap:wrap;gap:12px}
-.hero-note{margin-top:18px;color:var(--muted);font-size:14px}
-.hero-visual{position:relative;min-height:390px;display:flex;align-items:center;justify-content:center}
-.foam-stack{position:relative;width:min(100%,390px);height:330px}
-.foam-layer{position:absolute;width:82%;height:95px;left:9%;border-radius:14px;box-shadow:0 18px 30px rgba(0,0,0,.12)}
-.foam-1{top:40px;background:#d9dce0;transform:rotate(-5deg)}
-.foam-2{top:115px;background:#bfc4c9;transform:rotate(3deg)}
-.foam-3{top:190px;background:#999fa5;transform:rotate(-2deg)}
-.foam-label{position:absolute;bottom:0;left:50%;transform:translateX(-50%);background:var(--dark);color:#fff;padding:10px 17px;border-radius:30px;font-size:13px;font-weight:800;white-space:nowrap}
+.hero{
+  background:
+    radial-gradient(circle at 82% 45%,rgba(239,51,64,.06),transparent 28%),
+    linear-gradient(120deg,#f4f5f6 0%,#fff 58%,#f7f7f7 100%);
+  padding:96px 0 88px;
+}
 
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:70px;
+  align-items:center;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:30px;
+  padding:8px 15px;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:22px;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+
+.eyebrow-dot{
+  width:9px;
+  height:9px;
+  background:var(--accent);
+  border-radius:50%;
+  box-shadow:0 0 0 5px rgba(239,51,64,.08);
+}
+
+.hero h1{
+  font-size:clamp(43px,6vw,76px);
+  line-height:1.02;
+  letter-spacing:-3px;
+  margin-bottom:24px;
+}
+
+.hero h1 strong{
+  color:var(--accent);
+}
+
+.hero-lead{
+  font-size:19px;
+  line-height:1.7;
+  color:var(--muted);
+  max-width:680px;
+  margin-bottom:30px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+.hero-note{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.hero-visual{
+  position:relative;
+  min-height:410px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.foam-stack{
+  position:relative;
+  width:min(100%,410px);
+  height:350px;
+  filter:drop-shadow(0 18px 25px rgba(0,0,0,.08));
+}
+
+.foam-layer{
+  position:absolute;
+  width:84%;
+  height:100px;
+  left:8%;
+  border-radius:17px;
+  box-shadow:
+    0 20px 32px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.45);
+}
+
+.foam-1{
+  top:34px;
+  background:linear-gradient(135deg,#e4e6e8,#cdd1d4);
+  transform:rotate(-6deg);
+}
+
+.foam-2{
+  top:116px;
+  background:linear-gradient(135deg,#cbd0d4,#b5bbc0);
+  transform:rotate(4deg);
+}
+
+.foam-3{
+  top:198px;
+  background:linear-gradient(135deg,#a9afb4,#8e959b);
+  transform:rotate(-3deg);
+}
+
+.foam-label{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--dark);
+  color:#fff;
+  padding:11px 19px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:800;
+  white-space:nowrap;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
 section{padding:82px 0}
 .section-head{max-width:750px;margin-bottom:42px}
 .section-kicker{color:var(--accent);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:1.3px;margin-bottom:9px}
