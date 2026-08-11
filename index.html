@@ -964,36 +964,53 @@
       }
     ]
   }
-    /* ==========================
+   /* ==========================
    SCROLL TO TOP BUTTON
 ========================== */
 
-const scrollTopBtn =
-  document.getElementById("scrollTopBtn");
+document.addEventListener("DOMContentLoaded", function () {
+
+  const scrollTopBtn =
+    document.getElementById("scrollTopBtn");
+
+  if (!scrollTopBtn) return;
 
 
-window.addEventListener("scroll", () => {
+  function checkScrollPosition() {
 
-  if (window.scrollY > 450) {
+    if (window.scrollY > 450) {
 
-    scrollTopBtn.classList.add("show");
+      scrollTopBtn.classList.add("show");
 
-  } else {
+    } else {
 
-    scrollTopBtn.classList.remove("show");
+      scrollTopBtn.classList.remove("show");
+
+    }
 
   }
 
-});
+
+  window.addEventListener(
+    "scroll",
+    checkScrollPosition,
+    { passive: true }
+  );
 
 
-scrollTopBtn.addEventListener("click", () => {
+  scrollTopBtn.addEventListener("click", function () {
 
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
   });
 
+
+  checkScrollPosition();
+
+});
 });
   </script>
 </head>
