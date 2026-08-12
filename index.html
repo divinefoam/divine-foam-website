@@ -462,15 +462,82 @@ section{padding:82px 0}
   line-height:1.65;
 }.seo-copy{max-width:920px;color:var(--muted)}.seo-copy p+p{margin-top:14px}.seo-copy strong{color:var(--text)}
 
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}
-.contact-card{padding:32px;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
-.contact-item{padding:16px 0;border-bottom:1px solid var(--border)}
-.contact-item:last-child{border-bottom:0}.contact-item strong{display:block;margin-bottom:4px}
-.contact-item span,.contact-item a{color:var(--muted)}
-.map-box{min-height:390px;border-radius:var(--radius);background:linear-gradient(135deg,#e9ecef,#cfd4d8);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
-.map-box-inner{background:#fff;padding:25px;border-radius:16px;box-shadow:var(--shadow)}
-.map-box-inner h3{margin-bottom:8px}.map-box-inner p{color:var(--muted);font-size:14px;margin-bottom:17px}
+.contact-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:28px;
+}
 
+.contact-card{
+  padding:34px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+
+.contact-item{
+  padding:18px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.contact-item:last-child{
+  border-bottom:0;
+}
+
+.contact-item strong{
+  display:block;
+  margin-bottom:6px;
+  font-size:15px;
+}
+
+.contact-item span,
+.contact-item a{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.contact-item a{
+  transition:color .2s ease;
+}
+
+.contact-item a:hover{
+  color:var(--accent);
+}
+
+.map-box{
+  min-height:390px;
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 50% 40%,rgba(255,255,255,.5),transparent 45%),
+    linear-gradient(135deg,#e9ecef,#cfd4d8);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:28px;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+
+.map-box-inner{
+  background:#fff;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 12px 28px rgba(0,0,0,.10);
+  max-width:360px;
+}
+
+.map-box-inner h3{
+  margin-bottom:9px;
+  font-size:21px;
+}
+
+.map-box-inner p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+  margin-bottom:18px;
+}
 footer{background:#0b0d0f;color:#fff;padding:38px 0}
 .footer-grid{display:flex;justify-content:space-between;gap:25px;align-items:center}
 .footer-title{font-size:20px;font-weight:900}.footer-text{color:#aeb5ba;font-size:13px;margin-top:5px}
